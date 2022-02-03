@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+ 
+        /* Set display to none for image*/
+        #image, #title{
+            display: none;
+        }
+        body {
+            text-align: center;
+        }
+        body div img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+ 
+<body>
+    <div>
+        <h1 id="title">Love You 3000!❤</h1>
+        <h3 id="text">Click on the button to see magic</h3>
+ 
+        <!-- Add id to image -->
+        <img id="image" src="Image/img_1.jpg" alt="GFG image" width="400px"/>
+    </div>
+ 
+    <button type="button"
+        onclick="show()" id="btnID">
+        Click Me!
+    </button>
+ 
+    <script>
+        function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "block";
+
+            document.getElementById('title')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+
+            document.getElementById('text')
+                    .style.display = "none";
+        }
+    </script>
+</body>
+ 
+</html>
